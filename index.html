@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tpope</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width = device-width" />
+    <style type="text/css">
+      html { background-color: #fdf6e3; color: #657b83; }
+      body { font-family: sans-serif; font-size: 1.0em; width: 184px; }
+      h1 { font-size: 1.8em; text-align: center; margin: 0.25em 0; }
+      a { color: #fdf6e3; text-decoration: none; }
+      ul { margin: 0; padding: 0; }
+      li { display: block; float: left; margin: 5px; }
+      li img { width: 48px; height: 48px; border: none; }
+      img { behavior: url("/iepngfix.htc") }
+      /*
+      a { display: block; width: 48px; height: 48px; font-size: 1px; text-indent: -200px; }
+      li { background-image: url('/images/icons.png'); }
+      .twitter    { background-position: 0    0px; }
+      .facebook   { background-position: 0  -48px; }
+      .plus       { background-position: 0  -96px; }
+      .linkedin   { background-position: 0 -144px; }
+      .github     { background-position: 0 -192px; }
+      .vim        { background-position: 0 -240px; }
+      .ruby       { background-position: 0 -288px; }
+      .blog       { background-position: 0 -336px; }
+      .email      { background-position: 0 -384px; }
+      */
+    </style>
+    <script type="text/javascript">
+      function twirl() {
+        var rotatables = document.getElementsByTagName('li');
+        var rotateTo = function(deg) {
+          return function() {
+            for(var j=0; rotatables.length>j; j++) {
+              var l = rotatables[j];
+              l.style.WebkitTransform = l.style.MozTransform = l.style.transform = "rotate("+deg+"deg)";
+            }
+          };
+        };
+        for(var deg=6; 360>=deg; deg+=6) {
+          setTimeout(rotateTo(deg), deg);
+        }
+      }
+      setTimeout(twirl, 14000);
+    </script>
+  </head>
+  <body>
+    <h1 title="zilongshanren">子龙山人</h1>
+    <ul>
+      <li class="twitter"><a href="http://twitter.com/zilongshanren" title="zilongshanren" rel="me"><img alt="Twitter" src="/images/twitter-48.png" /></a></li>
+      <li class="facebook"><a href="http://facebook.com/tpope" title="tpo.pe/facebook" rel="me"><img alt="Facebook" src="/images/facebook-48.png" /></a></li>
+      <li class="plus"><a href="https://plus.google.com/109749101189546280011" title="tpo.pe/plus" rel="author me"><img alt="Google Plus" src="/images/plus-48.png" /></a></li>
+      <!-- <li class="linkedin"><a href="http://www.linkedin.com/in/tpope0" title="tpo.pe/linkedin" rel="me"><img alt="LinkedIn" src="/images/linkedin-48.png" /></a></li> -->
+      <li class="github"><a href="https://github.com/tpope" title="tpo.pe/github" rel="me"><img alt="GitHub" src="/images/github-48.png" /></a></li>
+      <!-- <li class="vim"><a href="http://www.vim.org/account/profile.php?user_id=9012" title="tpo.pe/vim"><img alt="Vim" src="/images/vim-48.png" /></a></li> -->
+      <!-- <li class="ruby"><a href="http://rubygems.org/profiles/tpope" title="tpo.pe/rubygems" rel="me"><img alt="RubyGems" src="/images/ruby-48.png" /></a></li> -->
+      <li class="blog"><a href="http://tbaggery.com/" title="tpo.pe/blog"><img alt="Blog" src="/images/blog-48.png" /></a></li>
+      <li class="email">
+        <a id="email" href="mailto:NOSPAMguanghui.qu@cocos2d-x.org" title="zilongshanren"><img alt="Email" src="/images/email-48.png" /></a>
+        <script type="text/javascript">
+          var link = document.getElementById('email');
+          link.href = link.href.replace(/NOSPAM/,'');
+          link.title = link.title.replace(/NOSPAM/,'');
+        </script>
+      </li>
+    </ul>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-46865972-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  </body>
+</html>
+
