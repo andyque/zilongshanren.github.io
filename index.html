@@ -28,23 +28,6 @@
       .email      { background-position: 0 -384px; }
       */
     </style>
-    <script type="text/javascript">
-      function twirl() {
-        var rotatables = document.getElementsByTagName('li');
-        var rotateTo = function(deg) {
-          return function() {
-            for(var j=0; rotatables.length>j; j++) {
-              var l = rotatables[j];
-              l.style.WebkitTransform = l.style.MozTransform = l.style.transform = "rotate("+deg+"deg)";
-            }
-          };
-        };
-        for(var deg=6; 360>=deg; deg+=6) {
-          setTimeout(rotateTo(deg), deg);
-        }
-      }
-      <!-- setTimeout(twirl, 14000); -->
-    </script>
   </head>
   <body>
     <h1 title="zilongshanren">子龙山人</h1>
@@ -65,18 +48,6 @@
         </script>
       </li>
     </ul>
-
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-46865972-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
 
   </body>
 </html>
